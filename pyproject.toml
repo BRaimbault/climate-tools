@@ -19,4 +19,4 @@ dependencies = [
 climtools = "dhis2eo.cli.__main__:main"
 
 [tool.setuptools]
-packages = ["dhis2eo"]
+packages = { find = { where = ["."], include = ["dhis2eo*"] } }
